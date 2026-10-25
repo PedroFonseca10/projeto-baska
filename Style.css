@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.topo {
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    border-bottom: 2px solid #e04f0b;
+}
+
+.topo__logo img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #e04f0b;
+}
+
+.sei_la {
+    min-height: calc(100vh - 90px);
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(135deg, #111, #202020);
+}
+
+.apresentação {
+    max-width: 600px;
+}
+
+.titulo {
+    color: #e04f0b;
+    font-style: oblique;
+    font-size: clamp(36px, 5vw, 50px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.apresentação h2 {
+    font-style: oblique;
+    font-size: clamp(20px, 2.5vw, 24px);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.apresentação p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.2s ease;
+}
+
+.botao:hover {
+    background-color: #e04f0b;
+    transform: translateY(-3px);
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.imagens img {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .topo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .sei_la {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apresentação {
+        max-width: 100%;
+    }
+
+    .imagens {
+        width: 100%;
+    }
+
+    .imagens img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo {
+        padding: 20px 5%;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .sei_la {
+        padding: 40px 6%;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .apresentação h2 {
+        font-size: 20px;
+    }
+
+    .apresentação p {
+        font-size: 14px;
+    }
+
+    .botao {
+        font-size: 14px;
+    }
+
+    .imagens img {
+        width: 220px;
+    }
+}
